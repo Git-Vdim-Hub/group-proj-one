@@ -8,15 +8,3 @@ nav {
   Display:flex;
   flex-direction: row;
 }
-
-.roadimage{
-   margin: 10px 0 0 10px;
-   height: 200px;
-   width: 600px;
-}
-
-/* size of the maps */
-#map1, #map2, #map3, #map4, #map5{
-    height: 200px;
-    width: 200px;
-}
