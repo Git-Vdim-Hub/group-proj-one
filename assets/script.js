@@ -249,5 +249,7 @@ document.querySelector('#searchActivate').addEventListener('click', () => {
     msEl.style.display ='none';
     alEl.style.display ='none';
     flEl.style.display ='none';
+  } else{
+    alert("Wrong input");
   }
 })
