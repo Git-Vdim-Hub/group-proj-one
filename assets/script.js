@@ -213,3 +213,41 @@ function initMap() {
     title: "Blood Mountain",
   })
 }
+
+var searchEl = document.querySelector("#theSearch");
+var flEl = document.querySelector("#FL");
+var txEl = document.querySelector("#TX");
+var msEl = document.querySelector("#MS");
+var alEl = document.querySelector("#AL");
+var laEl = document.querySelector("#LA");  
+
+document.querySelector('#searchActivate').addEventListener('click', () => {
+  let searchVal = searchEl.value;
+  if(searchVal === "FL" ||searchVal === "fl" ||searchVal === "Florida" ||searchVal === "florida"){
+    alert("You searched for Florida")
+    txEl.style.display ='none';
+    msEl.style.display ='none';
+    alEl.style.display ='none';
+    laEl.style.display ='none';
+  }else if (searchVal === "TX" ||searchVal === "tx" ||searchVal === "Texas" ||searchVal === "texas"){
+    flEl.style.display ='none';
+    msEl.style.display ='none';
+    alEl.style.display ='none';
+    laEl.style.display ='none';
+  }else if (searchVal === "MS" ||searchVal === "ms" ||searchVal === "Mississippi" ||searchVal === "mississippi"){
+    txEl.style.display ='none';
+    flEl.style.display ='none';
+    alEl.style.display ='none';
+    laEl.style.display ='none';
+  }else if (searchVal === "AL" ||searchVal === "al" ||searchVal === "Alabama" ||searchVal === "alabama"){
+    txEl.style.display ='none';
+    msEl.style.display ='none';
+    flEl.style.display ='none';
+    laEl.style.display ='none';
+  }else if (searchVal === "LA" ||searchVal === "la" ||searchVal === "Lousiana" ||searchVal === "lousiana"){
+    txEl.style.display ='none';
+    msEl.style.display ='none';
+    alEl.style.display ='none';
+    flEl.style.display ='none';
+  }
+})
